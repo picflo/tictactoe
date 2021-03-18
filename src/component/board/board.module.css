@@ -1,0 +1,18 @@
+.status {
+	padding: 24px;
+}
+
+.square {
+	padding: 40px;
+	margin: 10px;
+	min-height: 84px;
+	min-width: 84px;
+	background-color: white;
+	
+}
+
+.row:after {
+	clear: both;
+	content: '';
+	display: table;
+}

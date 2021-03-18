@@ -1,0 +1,39 @@
+.game {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.board {
+	display: flex;
+	justify-content: center;
+}
+
+.reset {
+	background-color: gray;
+	width: 148px;
+	color: white;
+	font-weight: bold;
+	height: 64px;
+	border-style: solid;
+	font-size: 24px;
+}
+
+.square {
+	background: #fff;
+	border: 2px solid #999;
+	float: left;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 34px;
+	height: 34px;
+	margin-right: -1px;
+	margin-top: -1px;
+	padding: 0;
+	text-align: center;
+	width: 34px;
+}
+
+.square:focus {
+	outline: none;
+}
