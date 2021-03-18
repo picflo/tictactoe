@@ -1,0 +1,13 @@
+.btn {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 24px;
+	background-color: gray;
+	max-width: 148px;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+}

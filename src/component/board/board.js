@@ -1,5 +1,7 @@
+import React from 'react';
 import { connect } from 'react-redux';
 import style from './board.module.css';
+import PropTypes from 'prop-types';
 
 const Board = props => {
 	const Square = ({ value, onClick }) => {
@@ -13,6 +15,11 @@ const Board = props => {
 				}}
 			/>
 		);
+	};
+
+	Square.propTypes = {
+		value: PropTypes.string,
+		onClick: PropTypes.any,
 	};
 
 	function handleClick(i) {
@@ -58,6 +65,14 @@ const Board = props => {
 			</div>
 		</div>
 	);
+};
+
+Board.propTypes = {
+	board: PropTypes.any,
+	turn: PropTypes.any,
+	win: PropTypes.any,
+	draw: PropTypes.bool,
+	newMove: PropTypes.any,
 };
 
 const mapStateToProps = state => {
